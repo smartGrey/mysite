@@ -1,0 +1,190 @@
+@charset "utf-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	font-family: "华文中宋","楷体";
+}
+
+body {
+	background: rgb(241,241,241);
+}
+
+h1 {
+	text-align: center;
+	font-size: 28px;
+	margin-top: 20px;
+}
+
+h2 {
+	font-size: 24px;
+	margin-top: 20px;
+	border-left: 5px solid rgb(110,110,110);
+	padding-left: 10px;
+	line-height: 26px;
+}
+
+h3 {
+	font-size: 16px;
+	color: #888;
+	margin-top: 20px;
+	letter-spacing: 1px;
+	line-height: 26px;
+}
+
+html,body,#content_box {
+	height: 100%;
+}
+#content_box {
+	margin: 0 20px;
+}
+.main_text {
+	margin-top: 20px;
+	padding-bottom: 50px;
+	font-size: 20px;
+}
+
+.main_text p {
+	background: rgba(220,220,220,0.4);
+	text-indent: 2rem;
+	margin: 20px 0;
+	padding: 0 6px;
+	text-indent: 2rem;
+	border-radius: 1px;
+	line-height: 34px;
+}
+
+
+
+
+
+
+#button {
+	cursor: pointer;
+	z-index: 2;
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	background: rgb(110,110,110);
+	bottom: 42px;
+	position: fixed;
+	bottom: 62px;
+	right: 28px;
+	box-shadow: 0px 0px 2px 1px #afafaf;
+	border: solid 1px #777;
+}
+#button .icon-liebiao {
+	font-size: 23px;
+	color: #fff;
+	transition: color 0.2s;
+	position: absolute;
+	left: 10px;
+	top: 10px;
+}
+
+
+
+#selectbox {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	left: -100%;
+	top: 0;
+	background: rgba(0,0,0,0.87);
+	z-index: 1;
+	transition: all 0.5s;
+	box-sizing: border-box;
+	box-shadow: -10px 0px 16px #111 inset;
+	overflow:hidden;
+}
+#selectbox .select_box_title {
+	color: #eee;
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 59px;
+	border-bottom: 1px solid #fff;
+}
+#selectbox .select_box_content_wrap {
+	max-height: calc(100% - 60px);
+	overflow-y: auto;
+	padding-bottom: 20px;
+	box-sizing: border-box;
+}
+#selectbox .select_box_content {
+	position: relative;
+	padding-left: 20px;
+	padding-bottom: 10px;
+}
+#selectbox .select_box_content:before {
+	content: "";
+	width: 1px;
+	background: #fff;
+	position: absolute;
+	left: 61px;
+	top: 70px;
+	bottom: 0;
+	z-index: -1;
+}
+#selectbox .select_box_content:after {
+	content: "";
+	width: 10px;
+	height: 10px;
+	background: #fff;
+	position: absolute;
+	bottom: 0;
+	left: 56px;
+	border-radius: 50%;
+}
+#selectbox .item {
+	color: #fff;
+	overflow:hidden;
+	margin: 50px 0;
+}
+#selectbox .val_1 {
+	float: left;
+	font-size: 20px;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	border: 2px solid #fff;
+	line-height: 80px;
+	text-align: center;
+	background: rgb(31,31,31);
+}
+#selectbox .val_2 {
+	float: left;
+	max-width: 200px;
+	margin-left: 30px;
+	margin-top: 8px;
+	letter-spacing: 1px;
+	text-indent: 2rem;
+	text-align: justify;
+	font-size: 18px;
+	line-height: 27px;
+}
+
+
+.footer {
+	position: fixed;
+	width: 100%;
+	text-align: center;
+	bottom: 0px;
+	font-size: 17px;
+	line-height: 28px;
+	color: #ddd;
+	letter-spacing: 1px;
+	z-index: -1;
+}
+.footer .BOLD {
+	font-weight: bold;
+}
+.icon-fangwen {
+	font-weight: bold;
+}
+@media (min-width: 0px) and (max-width: 450px) {
+	.disappear {
+		display: none;
+	}
+}

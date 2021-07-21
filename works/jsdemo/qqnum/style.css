@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+body,#text,#button {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #aaa;
+}
+
+#box {
+	position: absolute;
+	left: 50%;
+	top: 40%;
+	margin-left: -400px;
+	margin-top: -35px;
+	width: 800px;
+	height: 70px;
+}
+
+#text {
+	float: left;
+	width: 600px;
+	height: 70px;
+	background: #ccc;
+	border: none;
+	border-radius: 20px;
+	outline: none;
+	font-size: 50px;
+	padding-left: 14px;
+	padding-right: 14px;
+	padding-bottom: 4px;
+	font-weight: bold;
+	box-shadow: 2px 2px 4px #555;
+}
+
+#button {
+	float: right;
+	width: 140px;
+	height: 70px;
+	border-radius: 20px;
+	outline: none;
+	font-size: 30px;
+	font-weight: bold;
+	box-shadow: 3px 3px 4px #666;
+}

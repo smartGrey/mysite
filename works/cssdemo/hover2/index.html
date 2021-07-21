@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8" />
+	<title>hover 2</title>
+	<style>
+		* {transition: all 0.2s;}
+		body {background: #444;}
+		.public {position: absolute;opacity: 0;background: #fff;}
+		.box {
+			position: absolute;
+			left: 50%;
+			top: 40%;
+			transform: translate(-50%,-50%);
+		}
+		.btn {
+			text-decoration: none;
+			color: black;
+			font-size: 40px;
+			font-weight: bold;
+			padding: 16px;
+			border: 4px solid rgba(255,255,255,0.6);
+		}
+		.top {
+			top: 0;
+			left: -110%;
+			width: 0;
+			height: 4px;
+		}
+		.box:hover .top {
+			left: 0;
+			width: 100%;
+			opacity: 1;
+		}
+		.right {
+			right: 0;
+			top: -110%;
+			width: 4px;
+			height: 0;
+		}
+		.box:hover .right {
+			top: 0;
+			height: 100%;
+			opacity: 1;
+		}
+		.bottom {
+			bottom: 0;
+			right: -110%;
+			width: 0;
+			height: 4px;
+		}
+		.box:hover .bottom {
+			right: 0;
+			width: 100%;
+			opacity: 1;
+		}
+		.left {
+			bottom: -110%;
+			left: 0;
+			width: 4px;
+			height: 0;
+		}
+		.box:hover .left {
+			bottom: 0;
+			opacity: 1;
+			height: 100%;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div class="btn">这是一个按钮</div>
+		<span class="top public"></span>
+		<span class="right public"></span>
+		<span class="bottom public"></span>
+		<span class="left public"></span>
+	</div>
+</body>
+</html>

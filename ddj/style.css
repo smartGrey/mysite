@@ -1,0 +1,368 @@
+﻿@charset "utf-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	font-family: "华文中宋","楷体";
+}
+body,html {
+	height: 100%;
+}
+body {
+	background: rgb(241,241,241);
+}
+.beijingbox {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	z-index: -1;
+	position: absolute;
+}
+.beijing {
+	width: 400%;
+	height: 400%;
+	background: url("./images/yinyang.png") repeat;
+	opacity: 0.018;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	/*background-attachment:fixed;*/
+	animation: rotating 350s infinite linear;
+}
+@keyframes rotating {
+	0% {transform: translate(-50%,-50%) rotateZ(0deg);}
+	7% {transform: translate(-50%,-50%) rotateZ(90deg);}
+	14% {transform: translate(-50%,-50%) rotateZ(45deg);}
+	21% {transform: translate(-50%,-50%) rotateZ(135deg);}
+	28% {transform: translate(-50%,-50%) rotateZ(90deg);}
+	35% {transform: translate(-50%,-50%) rotateZ(180deg);}
+	42% {transform: translate(-50%,-50%) rotateZ(135deg);}
+	49% {transform: translate(-50%,-50%) rotateZ(225deg);}
+	56% {transform: translate(-50%,-50%) rotateZ(180deg);}
+	63% {transform: translate(-50%,-50%) rotateZ(270deg);}
+	70% {transform: translate(-50%,-50%) rotateZ(225deg);}
+	77% {transform: translate(-50%,-50%) rotateZ(315deg);}
+	84% {transform: translate(-50%,-50%) rotateZ(270deg);}
+	91% {transform: translate(-50%,-50%) rotateZ(360deg);}
+	100% {transform: translate(-50%,-50%) rotateZ(90deg);}
+}
+#lastPos {
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 47px;
+	box-sizing: border-box;
+	line-height: 43px;
+	font-size: 22px;
+	text-align: center;
+	bottom: 0;
+	background: #666;
+	animation: disappear 6s;
+	-webkit-animation: disappear 6.5s;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	z-index: 2;
+	letter-spacing: 1px;
+	box-shadow: 0px 0px 2px 1px #afafaf;
+	border-top: solid 1px #696969;
+	color: #eee;
+}
+@keyframes disappear {
+	0% {
+		bottom: 0;
+	}
+	70% {
+		bottom: 0;
+	}
+	100% {
+		bottom: -50px;
+	}
+}
+@-webkit-keyframes disappear {
+	0% {
+		bottom: 0;
+	}
+	70% {
+		bottom: 0;
+	}
+	100% {
+		bottom: -50px;
+	}
+}
+#backToHome {
+	font-size: 21px;
+	cursor: pointer;
+	text-decoration: underline;
+}
+#button {
+	cursor: pointer;
+	z-index: 2;
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	background: rgb(110,110,110);
+	bottom: 42px;
+	position: fixed;
+	bottom: 62px;
+	right: 28px;
+	box-shadow: 0px 0px 2px 1px #afafaf;
+	border: solid 1px #777;
+}
+.icon-liebiao {
+	font-size: 23px;
+	color: #fff;
+	transition: color 0.2s;
+	position: absolute;
+	left: 10px;
+	top: 10px;
+}
+#selectbox {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	left: -100%;
+	background: rgba(0,0,0,0.87);
+	z-index: 1;
+	transition: all 0.5s; 
+	font-size: 0;
+	box-sizing: border-box;
+	padding-left: 80px;
+	padding-right: 80px;
+	box-shadow: -10px 0px 16px #111 inset;
+	overflow: auto;
+	padding-top: 26px;
+	padding-bottom: 40px;
+}
+#selectbox span {
+	display: inline-block;
+	font-size: 18px;
+	width: 11.1%;
+	text-align: center;
+	line-height: 50px;
+	color: #ddd;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+#selectbox span:first-child {
+	display: block;
+	text-align: center;
+	width: 100%;
+	font-size: 26px;
+	margin-bottom: 12px;
+	letter-spacing: 4px;
+}
+#selectbox span:hover {
+	cursor: pointer;
+}
+
+#showbox {
+	width: 100%;
+	height: 100%;
+}
+.paragraph {
+	position: absolute;
+	left: 50%;
+	display: none;
+	width: 100%;
+	max-width: 500px;
+	box-sizing: border-box;
+	border-radius: 2px;
+	transform-origin: left;
+	transform: rotateY(0deg) translateX(-50%);
+	transition: transform 0.4s;
+	transform-style: preserve-3d;
+}
+.originalSide {
+	padding: 0 20px;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	transform-style: preserve-3d;
+	padding-bottom: 20px;
+}
+.translationSide {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	padding: 0 16px;
+	box-sizing: border-box;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	transform-origin: center bottom;
+	transform: rotateY(180deg);
+	padding-bottom: 20px;
+}
+.icon-fanyi {
+	position: absolute;
+	right: 24px;
+	top: 31px;
+	font-size: 36px;
+	cursor: pointer;
+	color: rgb(110,110,110);
+}
+.icon-yuan {
+	position: absolute;
+	right: 18px;
+	top: 29px;
+	font-size: 38px;
+	cursor: pointer;
+	color: rgb(110,110,110);
+}
+.translationSide .subparagraph {
+	font-size: 18px;
+	line-height: 28px;
+	margin: 14px 0;
+}
+
+.paragraph:first-child {
+	display: block;
+	text-align: center;
+	top: 37%;
+}
+.paragraph:first-child>img {
+	width: 94%;
+}
+.paragraph:first-child div {
+	width: 100%;
+	text-align: right;
+	padding-right: 20px;
+	box-sizing: border-box;
+}
+.paragraph:first-child div img {
+	width: 43%;
+}
+.paragraphtitle {
+	font-size: 30px;
+	border-left: 5px solid rgb(110,110,110);
+	padding-left: 10px;
+	height: 30px;
+	display: inline-block;
+	height: 34px;
+	line-height: 31px;
+	margin-top: 30px;
+}
+.subparagraph {
+	background: rgba(220,220,220,0.4);
+	margin: 20px 0;
+	font-size: 20px;
+	line-height: 34px;
+	display: block;
+	text-indent: 2rem;
+	padding: 0 6px;
+	border-radius: 1px;
+}
+.hasAnnotation {
+	color: rgba(0,0,100,0.72);
+	position: relative;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 19px;
+}
+.annotation::before {
+	content: "";
+	position: absolute;
+	left: 50%;
+	top: -7px;
+	transform: translateX(-50%);
+	border-left: solid 8px transparent;
+	border-right: solid 8px transparent;
+	border-bottom: none;
+	border-top: solid 8px rgb(200,200,200);
+	z-index: 1;
+}
+.annotation::after {
+	content: attr(zhushi);
+	position: absolute;
+	left: 50%;
+	top: -37px;
+	transform: translateX(-50%);
+	background: rgb(200,200,200);
+	text-indent: 0;
+	padding: 6px 10px;
+	border-radius: 8px;
+	font-size: 16px;
+	line-height: 20px;
+	color: #000;
+	box-shadow: 1px 1px 1px #aaa;
+	z-index: 0;
+	white-space: nowrap;
+}
+.icon-zhongdian {
+	position: absolute;
+	right: 16px;
+	bottom: 14px;
+	font-size: 200px;
+	color: rgba(0,0,0,0.08);
+	z-index: -1;
+}
+
+.footer {
+	position: fixed;
+	width: 100%;
+	text-align: center;
+	bottom: 0px;
+	font-size: 17px;
+	line-height: 28px;
+	color: #ddd;
+	letter-spacing: 1px;
+	z-index: -1;
+}
+.footer .BOLD {
+	font-weight: bold;
+}
+.icon-fangwen {
+	font-weight: bold;
+}
+
+@media (min-width: 0px) and (max-width: 930px) {
+	#selectbox span {
+		width: 25%;
+	}
+}
+@media (min-width: 0px) and (max-width: 700px) {
+	.paragraph:first-child {
+		font-size: 48px;
+		letter-spacing: 14px;
+	}
+	.paragraph .shuminghao {
+		font-size: 34px;
+		display: inline-block;
+	}
+	.paragraph:first-child span {
+		font-size: 24px;
+	}
+}
+@media (min-width: 0px) and (max-width: 500px) {
+	#selectbox {
+		padding-left: 24px;
+		padding-right: 24px;
+		padding-top: 20px;
+	}
+	#selectbox span {
+		font-size: 16px;
+		width: 50%;
+		line-height: 46px;
+		border-bottom: solid 1px #333;
+	}
+	#selectbox span:first-child {
+		border-bottom: none;
+		margin-bottom: 4px;
+	}
+}
+@media (min-width: 0px) and (max-width: 450px) {
+	.paragraphtitle {
+		margin-top: 26px;
+	}
+	.icon-fanyi {
+		top: 25px;
+		font-size: 36px;
+	}
+	.icon-yuan {
+		top: 24px;
+		font-size: 38px;
+	}
+	.disappear {
+		display: none;
+	}
+}

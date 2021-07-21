@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>发起话题</title>
+	<link rel="stylesheet" type="text/css" href="./reset.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<script type="text/javascript" src="./js/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="./js/js.js"></script>
+</head>
+<body>
+	<div class="header">
+		<div class="public">
+			<h1><img src="./img/clouds.png"></h1>
+			<span>发起</span>
+			<div class="userpic">
+				<img src="./img/userpic.jpg">
+				<div class="dropdown">
+					<p><a href="###">个人主页</a></p>
+					<p><a href="###">注销</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<form action="" class="public">
+		<div class="one">
+			<textarea id="title" class="title" placeholder="  添加话题标题..."></textarea>
+			<div id="addcover" class="addcover">
+				<label for="myfile">+点击添加话题封面</label>
+			</div>
+		</div>
+		<div class="two">
+			<textarea id="description" class="description" placeholder="  添加话题描述..."></textarea>
+			<div class="covershow" id="covershow">
+				<img id="previewImg" src="" width="80" height="80">
+			</div>
+			<input type="submit" id="submit" class="submit" value="发起话题">
+		</div>
+	</form>
+	<form action="" id="coverpic" enctype="multipart/form-data" method="post" style="display: none;">
+		<input type="file" id="myfile" name="myfile">
+	</form>
+	<div class="bottom">
+		<a href="###">联系我们</a>
+		<a href="###">友情链接</a>
+	</div>
+</body>

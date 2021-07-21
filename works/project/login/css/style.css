@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+body {
+	background: #000011;
+	overflow: hidden;
+}
+#helloweb {
+	position: absolute;
+	left: 0;
+	top: 0;
+	overflow: hidden;
+	transform: translate(0,-140px);
+}
+h1 {
+	color: #fff;
+	font-size: 50px;
+	font-size: 0;
+	position: absolute;
+	left: 10%;
+	top: 4%;
+}
+h1 img {
+	width: 200px;
+}
+form {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+form .circle {
+	position: relative;
+	width: 166px;
+	height: 166px;
+	border-radius: 50%;
+	border: 2px solid #fff;
+	left: 50%;
+	transform: translate(-50%,0);
+	transition: all 0.4s;
+}
+form .circle:hover {
+	cursor: pointer;
+	background: rgba(255,255,255,0.2);
+}
+form .circle img {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	width: 134px;
+	height: 44px;
+}
+form #user {
+	display: block;
+	margin-top: 40px;
+	width: 356px;
+	height: 46px;
+	border-radius: 4px;
+	border: 2px solid #fff;
+	color: #a3a3a3;
+	padding-left: 14px;
+	font-size: 20px;
+	box-sizing: border-box;
+	background: transparent;
+}
+form #user:focus {
+	background: rgba(255,255,255,0.2);
+}
+form #password {
+	display: block;
+	margin-top: 40px;
+	width: 356px;
+	height: 46px;
+	border-radius: 4px;
+	border: 2px solid #fff;
+	color: #a3a3a3;
+	padding-left: 14px;
+	font-size: 20px;
+	box-sizing: border-box;
+	background: transparent;
+}
+form #password:focus {
+	background: rgba(255,255,255,0.2);
+}
+form #submit {
+	display: block;
+	margin-top: 40px;
+	width: 356px;
+	height: 52px;
+	border-radius: 4px;
+	background: rgba(0,255,170,0.2);
+	color: #00ffaa;
+	box-sizing: border-box;
+	border: 2px solid #33ffbb;
+	transition: all 0.6s;
+}
+form #submit:hover {
+	background: rgba(0,255,170,1);
+	color: #000;
+	cursor: pointer;
+}
+form .other {
+	float: right;
+	margin-top: 20px;
+}
+form .other a {
+	color: #a3a3a3;
+	font-size: 20px;
+	padding: 0 6px;
+}
+form .other a:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+form .other a:first-child {
+	border-right: 1px solid #5a5a5a;
+	padding: 0 10px;
+}

@@ -1,0 +1,300 @@
+@charset "utf-8";
+
+body {
+	background: #f6f6f6;
+	padding-top: 50px;
+}
+.public {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.clearfix:after {
+	content: "";
+	height: 0;
+	line-height: 0;
+	display: block;
+	visibility: hidden;
+	clear: both;
+}
+
+.clearfix {
+	zoom: 1;
+}
+
+
+
+
+
+
+.header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background: #3d95ff;
+	height: 50px;
+	box-shadow: 0 0 6px #555;
+}
+.header .public {
+	position: relative;
+}
+h1 {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translate(0,-50%);
+}
+h1 img {
+	width: 90px;
+}
+.header span {
+	font-size: 24px;
+	color: #fff;
+	line-height: 50px;
+	display: block;
+	text-align: center;
+}
+.header .userpic {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 0;
+}
+.header .userpic img {
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+}
+.header .userpic .dropdown {
+	display: none;
+	opacity: 0;
+	transition: all 0.6s;
+	position: absolute;
+	top: 40px;
+	left: 50%;
+	transform: translate(-50%,0);
+	width: 80px;
+	color: #fff;
+	background: #424242;
+	text-align: center;
+	border: 2px solid #3d95ff;
+	border-radius: 6px;
+}
+.header .userpic:hover {
+	cursor: pointer;
+}
+.header .userpic:hover .dropdown {
+	display: inline-block;
+	opacity: 1;
+}
+.header .userpic .dropdown:before {
+	content: '';
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	border-bottom: 6px solid #00ffaa;
+	position: absolute;
+	z-index: 10;
+	left: 50%;
+	top: -6px;
+	transform: translate(-50%,0);
+}
+.header .userpic .dropdown a {
+	font-size: 16px;
+	color: #fff;
+	padding: 6px;
+	display: inline-block;
+}
+
+
+
+
+
+
+
+
+.bottom {
+	background: #3d95ff;
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+.bottom a {
+	padding: 0 20px;
+	font-size: 20px;
+	line-height: 34px;
+	color: #fff;
+}
+
+
+
+
+
+.topichead {
+	/*height: 250px;*/
+	margin-top: 20px;
+	font-size: 0;
+	overflow: hidden;
+}
+.topichead .left {
+	height: 100%;
+	width: 840px;
+	display: inline-block;
+	float: left;
+	box-shadow: 0 0 10px #e6e6e6;
+	background: #fff;
+}
+.topichead .right {
+	height: 100%;
+	width: calc(100% - 860px);
+	display: inline-block;
+	font-size: 20px;
+	float: right;
+	box-sizing: border-box;
+	box-shadow: 0 0 10px #e6e6e6;
+	background: #fff;
+}
+.topichead .left .cover {
+	width: 180px;
+	margin-top: 34px;
+	margin-left: 30px;
+	border-radius: 4px;
+	float: left;
+}
+.topichead .left .rightcontent {
+	display: inline-block;
+	width: 580px;
+	margin-left: 26px;
+}
+.topichead .left .title {
+	font-size: 24px;
+	font-weight: bold;
+	display: inline-block;
+	margin-top: 16px;
+	height: 74px;
+}
+.topichead .left .content {
+	font-size: 16px;
+	letter-spacing: 1px;
+	height: 90px;
+}
+.topichead .left .publisher {
+	display: inline-block;
+}
+.topichead .left .publisher img {
+	width: 44px;
+	border-radius: 4px;
+	float: left;
+}
+.topichead .left .publishername {
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 44px;
+	float: left;
+	margin-left: 10px;
+}
+.topichead .left .otherbtn {
+	float: right;
+	font-size: 18px;
+	line-height: 46px;
+}
+.topichead .left .otherbtn a  {
+	margin-left: 6px;
+	color: #000;
+}
+
+
+
+
+
+.comment {
+	margin-top: 20px;
+}
+.comment .left {
+	width: 840px;
+	float: left;
+	box-sizing: border-box;
+	margin-bottom: 60px;
+}
+.comment .lefttop {
+	background: #fff;
+	box-shadow: 0 0 10px #e6e6e6;
+	margin-bottom: 20px;
+	position: relative;
+}
+.comment .lefttop textarea {
+	border: none;
+	resize: vertical;
+	height: 90px;
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 10px;
+}
+.comment .lefttop .submit {
+	position: absolute;
+	right: 8px;
+	bottom: 8px;
+	display: inline-block;
+	width: 50px;
+	height: 30px;
+	background: #3d95ff;
+	color: #fff;
+	font-weight: bold;
+}
+.comment .right {
+	width: calc(100% - 860px);
+	height: 400px;
+	float: right;
+	box-sizing: border-box;
+	box-shadow: 0 0 10px #e6e6e6;
+	background: #fff;
+}
+.comment .left .blockbar {
+	background: #fff;
+	padding-left: 30px;
+	padding-right: 30px;
+	margin-bottom: 20px;
+	box-shadow: 0 0 10px #e6e6e6;
+}
+.comment .left .block {
+	padding-top: 20px;
+	padding-bottom: 14px;
+	border-bottom: 2px solid #f1f1f1;
+}
+.comment .left .block:last-child {
+	border: none;
+}
+.comment .left .block .commenter {
+	overflow: hidden;
+	display: block;
+}
+.comment .left .block .commenter img {
+	width: 44px;
+	border-radius: 4px;
+	float: left;
+}
+.comment .left .block .commentername {
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 44px;
+	float: left;
+	margin-left: 10px;
+	color: #000;
+}
+.comment .left .block .content {
+	margin-top: 10px;
+	letter-spacing: 1px;
+}
+.comment .left .block .blockbottom {
+	margin-top: 10px;
+}
+.comment .left .block .blockbottom .otherbtn {
+	float: right;
+}
+.comment .left .block .blockbottom .otherbtn a {
+	color: #000;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>cut picture</title>
+	<style type="text/css">
+		* {margin: 0;padding: 0;}
+		body {background: lightblue;}
+		.box {
+			font-size: 0;
+			width: 520px;
+			transition: all 2s;
+			position: absolute;
+			left: 50%;
+			top: 46%;
+			transform: translate(-50%,-50%);}
+		.box div {
+			width: 70px;
+			height: 70px;
+			background: green;
+			display: inline-block;
+			background: url("./1.png") no-repeat;
+			background-position: 0 0;
+			margin-right: 20px;
+			margin-bottom: 20px;
+			transition: all 2s;
+		}
+		.box div:nth-child(6n) {margin-right: 0;}
+		#lower {margin-bottom: 0;}
+		.box:hover {
+			width: 420px;
+		}
+		.box:hover div {
+			margin: 0;
+		}
+	</style>
+		<script type="text/javascript">
+			window.onload=function(){
+				var oBox=document.getElementById('box');
+				var aDiv=oBox.getElementsByTagName('div');
+
+				for (var i=0;i<36;i++) {
+					aDiv[i].style.backgroundPosition=-70*parseInt(i%6)+'px '+'-'+70*parseInt(i/6)+'px';
+				}
+			}
+		</script>
+</head>
+<body>
+	<div class="box" id="box">
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div id="lower"></div>
+		<div id="lower"></div>
+		<div id="lower"></div>
+		<div id="lower"></div>
+		<div id="lower"></div>
+		<div id="lower"></div>
+	</div>
+</body>
+</html>

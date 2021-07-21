@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>user-defined size</title>
+	<style>
+		div {
+			text-align: center;
+			line-height: 400px;
+			font-size: 40px;
+			width: 600px;
+			height: 400px;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%,-60%);
+			background: lightblue;
+			resize: both;
+			overflow: hidden;
+			/*最后两个不能少*/
+		}
+		div:after {
+			content: "";
+			position: absolute;
+			right: -14px;
+			bottom: -14px;
+			width: 28px;
+			height: 28px;
+			background: #0a9;
+			transform: rotate(45deg);
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<div>拖动右下角调整大小</div>
+</body>
+</html>

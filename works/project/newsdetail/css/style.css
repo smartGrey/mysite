@@ -1,0 +1,244 @@
+@charset "utf-8";
+
+body {
+	background: #fff;
+	padding-top: 50px;
+}
+.public {
+	max-width: 1200px;
+	min-width: 800px;
+	margin: 0 auto;
+}
+
+.header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background: #424242;
+	height: 50px;
+	box-shadow: 0 0 6px #555;
+}
+.header .public {
+	position: relative;
+}
+h1 {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translate(0,-50%);
+}
+h1 img {
+	width: 90px;
+}
+.header span {
+	font-size: 24px;
+	color: #fff;
+	line-height: 50px;
+	display: block;
+	text-align: center;
+	letter-spacing: 10px;
+}
+.header .userpic {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 0;
+}
+.header .userpic img {
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+}
+.header .userpic .dropdown {
+	display: none;
+	opacity: 0;
+	transition: all 0.6s;
+	position: absolute;
+	top: 56px;
+	left: 50%;
+	transform: translate(-50%,0);
+	width: 80px;
+	color: #fff;
+	background: #424242;
+	text-align: center;
+	border: 2px solid #00ffaa;
+	border-radius: 6px;
+}
+.header .userpic:hover {
+	cursor: pointer;
+}
+.header .userpic:hover .dropdown {
+	display: inline-block;
+	opacity: 1;
+}
+.header .userpic .dropdown:before {
+	content: '';
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	border-bottom: 6px solid #00ffaa;
+	position: absolute;
+	z-index: 10;
+	left: 50%;
+	top: -6px;
+	transform: translate(-50%,0);
+}
+.header .userpic .dropdown a {
+	font-size: 16px;
+	color: #fff;
+	padding: 6px;
+	display: inline-block;
+}
+
+
+
+.bottom {
+	background: #424242;
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	transition: all 0.3s;
+	transform: rotateX(80deg);
+	transform-origin: bottom;
+}
+.bottom a {
+	padding: 0 20px;
+	font-size: 18px;
+	line-height: 36px;
+	color: #fff;
+	letter-spacing: 4px;
+}
+.bottom:hover {
+	transform: rotateX(0);
+}
+
+
+
+
+
+
+
+.middle {
+	overflow: hidden;
+}
+.middle .leftnews {
+	width: calc(100% - 350px);
+	float: left;
+	margin-bottom: 100px;
+	padding: 0 50px;
+	box-sizing: border-box;
+}
+.middle .leftnews .index {
+	margin-top: 20px;
+}
+.middle .leftnews .index a {
+	font-size: 14px;
+	font-weight: bold;
+	color: #3e3e3e;
+}
+.middle .leftnews h2 {
+	font-size: 26px;
+	font-weight: bold;
+	margin-top: 20px;
+	letter-spacing: 3px;
+}
+.middle .leftnews .message {
+	overflow: hidden;
+	margin-top: 30px;
+}
+.middle .leftnews .publishtime {
+	font-size: 14px;
+	color: #3e3e3e;
+	display: inline-block;
+	float: left;
+}
+.middle .leftnews .pageview {
+	float: right;
+	font-size: 14px;
+	color: #3e3e3e;
+}
+.middle .leftnews .cutline {
+	height: 2px;
+	background: #ccc;
+	width: 100%;
+	margin-top: 20px;
+}
+.middle .leftnews .content p {
+	font-size: 18px;
+	line-height: 1.5em;
+	letter-spacing: 2px;
+	text-indent: 2.1em;
+	margin-top: 30px;
+	text-align: justify;
+}
+.middle .leftnews .content img {
+	width: calc(100% - 40px);
+	display: block;
+	margin: 0 auto;
+	margin-top: 30px;
+	border-radius: 4px;
+}
+.middle .leftnews .content .publisher {
+	display: block;
+	text-align: right;
+	font-size: 16px;
+	font-weight: bold;
+	margin-top: 60px;
+	margin-right: 14px;
+}
+
+
+.middle .right {
+	width: 350px;
+	float: right;
+	box-sizing: border-box;
+	padding: 0 20px;
+}
+.middle .right .righttitle {
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: 40px;
+	color: #555;
+	letter-spacing: 2px;
+}
+.middle .right .box {
+	margin: 0 auto;
+	height: 280px;
+	background: lightgreen;
+	margin-top: 14px;
+	border-radius: 4px;
+}
+.middle .right .progressbox {
+	height: 4px;
+	margin: 0 10px;
+	position: relative;
+}
+.middle .right .progressbox div {
+	position: absolute;
+	height: 4px;
+	background: #00ffaa;
+	width: 25%;
+	padding: 14px 0;
+	background-clip: content-box;
+}
+.middle .right .progressbox div:nth-child(1) {
+	left: 0;
+}
+.middle .right .progressbox div:nth-child(2) {
+	left: 25%;
+}
+.middle .right .progressbox div:nth-child(3) {
+	left: 50%
+}
+.middle .right .progressbox div:nth-child(4) {
+	left: 75%;
+}
+.middle .right .progressbox div:hover {
+	background: darkorange;
+	cursor: pointer;
+	background-clip: content-box;	
+}

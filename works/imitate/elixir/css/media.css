@@ -1,0 +1,435 @@
+@charset "utf-8";
+
+@media (min-width: 0px) and (max-width: 1240px) {
+	.nav .public {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
+@media (min-width: 0px) and (max-width: 1050px) {
+	.header h2 {
+		font-size: 60px;
+		letter-spacing: 16px;
+		padding-top: 50px;
+		line-height: 60px;
+	}
+	.header p:nth-child(2) {
+		font-size: 14px;
+		letter-spacing: 10px;
+		word-spacing: 4px;
+		line-height: 14px;
+		margin-top: 10px;
+	}
+	.header span {
+		width: 200px;
+	}
+	.header p:nth-child(4) {
+		letter-spacing: 4px;
+		font-size: 24px;
+		max-width: 800px;
+		margin-top: 30px;
+		line-height: 50px;
+	}
+	.header div:nth-child(5) {
+		padding: 14px 30px;
+		font-size: 20px;
+		letter-spacing: 4px;
+		margin-top: 40px;
+	}
+	.header div:last-child p {
+		font-size: 14px;
+		letter-spacing: 4px;
+		margin-top: 30px;
+		padding-bottom: 6px;
+	}
+	.header {
+		padding-bottom: 16px;
+	}
+	.list1 .public div {
+		padding-top: 30px;
+		padding-bottom: 30px;
+		border-radius: 20px;
+	}
+	.list1 span {
+		padding: 20px;
+	}
+	.list1 span i {
+		font-size: 40px;
+	}
+	.list1 h4 {
+		font-size: 16px;
+		margin-top: 16px;
+	}
+	.list1 .public div p:nth-child(3) {
+		font-size: 14px;
+		line-height: 20px;
+		margin-top: 10px;
+		padding-left: 10px;
+		padding-right: 10px;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		white-space: nowrap;
+	}
+	.list1 .public div p:last-child {
+		font-size: 14px;
+		margin-top: 0px;
+	}
+}
+
+@media (min-width: 0px) and (max-width: 950px) {
+	.nav .public {
+		padding-top: 20px;
+		padding-bottom: 34px;
+	}
+	.nav .right > li:last-child,.nav .right > li:nth-child(6) {
+		display: none;
+	}
+	.nav .right > li:nth-child(5) {
+		border-right: none;
+	}
+}
+
+@media (min-width: 0px) and (max-width: 850px) {
+	.list5 {
+		padding-top: 20px;
+	}
+	.list5 .public > div {
+		width: calc(50% - 32px);
+		margin-bottom: 20px;
+	}
+	.introduce5 {
+		padding-top: 20px;
+		padding-bottom: 14px;
+	}
+	.introduce5 p:first-child {
+		font-size: 20px;
+	}
+	.introduce5 p:nth-child(2) {
+		max-width: 500px;
+		font-size: 16px;
+		margin-top: 10px;
+		line-height: 26px;
+	}
+	.introduce5 p:nth-child(3) {
+		font-size: 12px;
+		margin-top: 4px;
+	}
+	.introduce5 .arrows {
+		margin-top: 14px;
+	}
+	.introduce5 .arrows span {
+		padding: 4px;
+	}
+	.introduce5 .arrows span:first-child {
+		margin-right: 18px;
+	}
+	.introduce5 .arrows span i {
+		font-size: 20px;
+	}
+}
+
+@media (min-width: 0px) and (max-width: 800px) {
+	.header h2 {
+		font-size: 40px;
+		letter-spacing: 12px;
+		padding-top: 40px;
+		line-height: 60px;
+	}
+	.header p:nth-child(2) {
+		font-size: 14px;
+		letter-spacing: 2px;
+		word-spacing: 4px;
+		line-height: 14px;
+		margin-top: 2px;
+	}
+	.header span {
+		width: 160px;
+		margin-top: 6px;
+	}
+	.header p:nth-child(4) {
+		letter-spacing: 2px;
+		font-size: 20px;
+		max-width: 500px;
+		margin-top: 20px;
+		line-height: 36px;
+	}
+	.header div:nth-child(5) {
+		padding: 10px 20px;
+		font-size: 18px;
+		letter-spacing: 4px;
+		margin-top: 20px;
+		border: 2px solid #eee;
+	}
+	.header div:last-child p {
+		font-size: 14px;
+		letter-spacing: 4px;
+		margin-top: 20px;
+		padding-bottom: 2px;
+	}
+	.header {
+		padding-bottom: 10px;
+	}
+	.header div:nth-child(5) span:first-child,.header div:nth-child(5) span:nth-child(2),.header div:nth-child(5) span:nth-child(3),.header div:nth-child(5) span:nth-child(4) {
+		display: none;
+	}
+	.header div:nth-child(5):hover {
+		border: 2px solid #fff;
+	}
+	.introduce1 {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	.introduce1 h3 {
+		font-size: 20px;
+	}
+	.introduce1 p {
+		max-width: 600px;
+		margin-top: 6px;
+		letter-spacing: 0;
+		font-size: 14px;
+		line-height: 20px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
+@media (min-width: 0px) and (max-width: 750px) {
+	.nav .public {
+		padding-top: 16px;
+		padding-bottom: 24px;
+	}
+	.nav .left a {
+		font-size: 26px;
+		letter-spacing: 1px;
+	}
+	.nav .right {
+		margin-top: 8px;
+	}
+	.nav .right > li {
+		font-size: 16px;
+	}
+	.nav .right > li > ul {
+		top: 24px;
+	}
+	.list2 {
+		padding-top: 20px;
+	}
+	.list2 h3 {
+		font-size: 26px;
+	}
+	.list2 p {
+		font-size: 16px;
+		line-height: 22px;
+		max-width: 400px;
+		margin-top: 10px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.list2 .line {
+		width: 160px;
+		margin-top: 10px;
+	}
+	.list2 .public img {
+		width: 50%;
+	}
+	.list3 {
+		padding-top: 24px;
+	}
+	.list3 h3 {
+		font-size: 28px;
+	}
+	.list3 .public > p {
+		font-size: 12px;
+		line-height: 18px;
+		width: 100%;
+		padding-left: 30px;
+		box-sizing: border-box;
+		padding-right: 30px;
+	}
+	.list3 .bar > div {
+		width: calc(50% - 20px);
+		margin-bottom: 14px;
+	}
+	.list3 .bar > div:nth-child(3) {
+		display: none;
+	}
+}
+
+@media (min-width: 0px) and (max-width: 600px) {
+	.nav .public {
+		padding-top: 8px;
+		padding-bottom: 16px;
+	}
+	.nav .left {
+		display: none;
+	}
+	.nav .right {
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+	.nav .right > li {
+		padding: 0;
+		width: 25%;
+		font-size: 13px;
+		border-right: 1px solid #a2a8af;
+		font-weight: bold;
+	}
+	.nav .right > li:nth-child(5) {
+		display: none;
+	}
+	.nav .right > li:nth-child(4) {
+		border-right: none;
+	}
+	.nav .right > li > ul {
+		top: 20px;
+	}
+}
+
+@media (min-width: 0px) and (max-width: 550px) {
+	.list1 .public div {
+		width: 90%;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		border-radius: 30px;
+	}
+	.list1 span {
+		padding: 30px;
+	}
+	.list1 span i {
+		font-size: 50px;
+	}
+	.list1 h4 {
+		font-size: 22px;
+		margin-top: 20px;
+	}
+	.list1 .public div p:nth-child(3) {
+		font-size: 18px;
+		line-height: 26px;
+		margin-top: 10px;
+		padding-left: 20px;
+		padding-right: 20px;
+		overflow: visible;
+		white-space: normal;
+	}
+	.list1 .public div p:last-child {
+		font-size: 14px;
+		margin-top: 4px;
+	}
+	.list4 {
+		padding-top: 20px;
+	}
+	.list4 h3 {
+		font-size: 22px;
+	}
+	.list4>p:nth-child(2) {
+		font-size: 14px;
+		width: 330px;
+		margin-top: 6px;
+		line-height: 18px;
+	}
+	.list4 .public .imgs {
+		padding-top: 6px;
+		padding-bottom: 6px;
+		margin-top: 20px;
+	}
+	.list4 .public .imgs img {
+		width: 50%;
+	}
+	.list4 .public p {
+		font-size: 12px;
+		padding-left: 6px;
+		padding-right: 6px;
+		padding-bottom: 4px;
+		padding-top: 4px;
+	}
+	.list5 .public > div {
+		width: calc(100% - 32px);
+	}
+	.start {
+		padding-top: 16px;
+		padding-bottom: 14px;
+	}
+	.start p {
+		letter-spacing: 0;
+		font-size: 12px;
+	}
+	.start span {
+		padding: 6px 20px;
+		border-radius: 3px;
+		margin-top: 10px;
+	}
+	.introduce5 {
+		padding-top: 12px;
+		padding-bottom: 12px;
+	}
+	.introduce5 p:first-child {
+		font-size: 18px;
+	}
+	.introduce5 p:nth-child(2) {
+		max-width: 400px;
+		font-size: 14px;
+		margin-top: 10px;
+		line-height: 22px;
+		padding-left: 24px;
+		padding-right: 24px;
+	}
+	.introduce5 p:nth-child(3) {
+		margin-top: 4px;
+	}
+	.introduce5 .arrows {
+		margin-top: 10px;
+	}
+	.introduce5 .arrows span {
+		padding: 4px;
+	}
+	.introduce5 .arrows span:first-child {
+		margin-right: 12px;
+	}
+	.introduce5 .arrows span i {
+		font-size: 20px;
+	}
+}
+
+@media (min-width: 0px) and (max-width: 470px) {
+	.header {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	.list3 {
+		padding-top: 10px;
+	}
+	.list3 h3 {
+		font-size: 24px;
+	}
+	.list3 .public > p {
+		font-size: 12px;
+		line-height: 14px;
+	}
+	.list3 .bar > div {
+		width: calc(100% - 20px);
+		margin-bottom: 12px;
+	}
+	.list3 .bar > div:nth-child(3) {
+		display: inline-block;
+	}
+	.list3 .bar > div .square:hover .backgroundColor {
+		width: 564px;
+		height: 564px;
+	}
+	.footer {
+		padding-top: 14px;
+		padding-bottom: 14px;
+	}
+	.footer h3 {
+		font-size: 16px;
+		letter-spacing: 2px;
+	}
+	.footer p {
+		font-size: 14px;
+		line-height: 20px;
+		max-width: 320px;
+		margin-top: 8px;
+	}
+}

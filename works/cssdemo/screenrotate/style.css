@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 100px;
+	font-weight: bold;
+	text-align: center;
+}
+html,body {
+	width: 100%;
+	height: 100%;
+}
+.allscreen {
+	width: 100%;
+	height: 100%;
+	-webkit-perspective: 2000px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.hexahedron {
+	width: 100%;
+	height: 100%;
+	transition: all 0.8s;
+	-webkit-transform-style: preserve-3d;
+	position: absolute;
+
+	transform-origin: bottom;
+	bottom: 0;
+}
+.allscreen:hover .hexahedron {
+	bottom: 100%;
+	transform: rotateX(90deg);
+}
+
+
+
+.surface {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.hexahedron .one {
+	left: 0;
+	top: 0;
+	background: yellow;
+}
+.hexahedron .two {
+	left: 0;
+	top: -100%;
+	background: green;
+	transform-origin: bottom;
+	transform: rotateX(90deg);
+}
+.hexahedron .three {
+	left: 0;
+	bottom: -100%;
+	background: grey;
+	transform-origin: top;
+	transform: rotateX(-90deg);
+}

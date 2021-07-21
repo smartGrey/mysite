@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+body {
+	background: #333;
+	color: #eee;
+	font-weight: bold;
+	font-size: 70px;
+	text-align: center;
+	padding-top: 300px;
+}
