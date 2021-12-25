@@ -1,0 +1,31 @@
+<html>
+<head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    #clicker {
+      text-align: center;
+      font-size: 100;
+      color: rgb(168, 69, 172);
+      background: lightseagreen;
+      position: fixed;
+      top:0;
+      bottom: 0;
+      width: 100%;
+      line-height: 300px;
+    }
+  </style>
+</head>
+<body>
+  <div id='clicker'>0</div>
+
+  <script>
+    var o=document.getElementById('clicker');
+    o.onclick=function() {
+      o.innerHTML=parseInt(o.innerHTML)+1;
+    }
+  </script>
+</body>
+</html>
